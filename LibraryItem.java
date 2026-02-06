@@ -34,4 +34,28 @@ public class LibraryItem {
 	public boolean isAvailable() {
 		return isAvailable;
 	}
+	
+// Methods
+	public boolean checkOut() {
+		if (isCheckedOut) {
+			return false;
+		}
+		isCheckedOut = true;
+		isAvailable = false;
+		return true;
+	}
+
+	public boolean returnItem() {
+		if (!isCheckedOut) {
+			return false;
+		}
+		isCheckedOut = false;
+		isAvailable = true;
+		return true;
+	}
+
+	public String getStatusText() {
+		return isAvailable ? "Available" : "Checked Out";
+	}
+
 }
