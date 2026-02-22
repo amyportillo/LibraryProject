@@ -36,6 +36,10 @@ public class LibraryItem {
 	}
 	
 // Methods
+	// Returns the default loan period in days (polymorphic)
+	public int getLoanDays() {
+		return 14;
+	}
 	public boolean checkOut() {
 		if (isCheckedOut) {
 			return false;

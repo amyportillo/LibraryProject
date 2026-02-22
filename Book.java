@@ -9,4 +9,10 @@ public class Book extends LibraryItem {
     public String getAuthor() {
         return author;
     }
+
+    // Override to return 21 days for books
+    @Override
+    public int getLoanDays() {
+        return 21;
+    }
 }

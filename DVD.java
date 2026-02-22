@@ -13,4 +13,10 @@ public class DVD extends LibraryItem {
     public int getRuntimeMinutes() {
         return runtimeMinutes;
     }
+
+    // Override to return 7 days for DVDs
+    @Override
+    public int getLoanDays() {
+        return 7;
+    }
 }
