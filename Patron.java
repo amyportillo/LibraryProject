@@ -1,18 +1,22 @@
 public class Patron {
-	private final int patronId;
-	private final String patronName;
+    // I store each patron's unique ID.
+    private int patronId;
+    // I store the patron's full name.
+    private String name;
 
-	public Patron(int patronId, String patronName) {
-		this.patronId = patronId;
-		this.patronName = patronName;
-	}
+    // I use this constructor to create a patron record.
+    public Patron(int patronId, String name) {
+        this.patronId = patronId;
+        this.name = name;
+    }
 
-	// Getters
-	public int getPatronId() {
-		return patronId;
-	}
+    // I return the patron ID.
+    public int getPatronId() {
+        return patronId;
+    }
 
-	public String getPatronName() {
-		return patronName;
-	}
+    // I return the patron name.
+    public String getName() {
+        return name;
+    }
 }
